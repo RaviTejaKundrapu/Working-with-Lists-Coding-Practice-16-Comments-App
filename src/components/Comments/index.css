@@ -1,0 +1,149 @@
+/* Write your CSS here */
+.appContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 6px;
+}
+.commentHeading {
+  font-family: 'Roboto';
+  font-size: 42px;
+  font-weight: 500;
+  color: #1e293b;
+}
+.desccomm {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  color: #44536c;
+}
+.inputTakingAndImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.inputTakingContainer {
+  /* border: 1px solid red; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  order: 1;
+}
+.inputBar {
+  height: 30px;
+  width: 200px;
+  border: 1px solid #475569;
+  border-radius: 5px;
+  margin: 9px;
+}
+.commentBar {
+  height: 90px;
+  min-width: 200px;
+  max-width: 200px;
+  border: 1px solid #475569;
+  border-radius: 5px;
+  margin: 9px;
+}
+.addComment {
+  background-color: #0284c7;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  width: 100px;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  margin: 9px;
+}
+.commentsImage {
+  height: 190px;
+  width: 246px;
+  order: 0;
+}
+.commentsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.totalComments {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+.totalCommentsNum {
+  border: 1px solid none;
+  border-radius: 3px;
+  background-color: rgb(15, 147, 199);
+  color: white;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px;
+  margin: 5px;
+}
+.line {
+  width: 98%;
+  color: #475569;
+}
+
+@media all and (min-width: 767px) {
+  .commentHeading {
+    font-size: 52px;
+  }
+  .desccomm {
+    font-size: 22px;
+  }
+  .inputTakingAndImageContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .inputTakingContainer {
+    /* border: 1px solid red; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    order: 0;
+    margin: 30px;
+    flex-grow: 2;
+  }
+  .inputBar {
+    height: 40px;
+    width: 245px;
+  }
+  .commentBar {
+    height: 90px;
+    min-width: 290px;
+    max-width: 330px;
+  }
+  .addComment {
+    font-size: 18px;
+    width: 180px;
+  }
+  .commentsImage {
+    height: 290px;
+    width: 320px;
+    order: 1;
+    flex-grow: 2;
+  }
+  .commentsContainer {
+    width: 90%;
+  }
+  .totalComments {
+    font-size: 21px;
+  }
+  .totalCommentsNum {
+    font-size: 20px;
+  }
+}
